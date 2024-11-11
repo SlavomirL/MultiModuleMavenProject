@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>guru.springframework</groupId>
+        <artifactId>MultiModelMavenProject</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <artifactId>web-app</artifactId>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>guru.springframework</groupId>
+            <artifactId>jpa-entities</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>guru.springframework</groupId>
+            <artifactId>web-api</artifactId>
+<!--            <version>1.0-SNAPSHOT</version>-->
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+<!--            this dependency here is pretty much redundant because its somewhere else, but its up to each developer taste -->
+            <groupId>guru.springframework</groupId>
+            <artifactId>converters</artifactId>
+<!--            <version>1.0-SNAPSHOT</version>-->
+                        <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
